@@ -1,0 +1,47 @@
+.table-game-number-label {
+	background-color: transparent;
+	height: 45px !important;
+	color: white;
+}
+
+.dart {
+	width: 55px;
+	height: 159px;
+	background-image: url('../images/BalloonPop/DartSprites.png');
+	position: absolute;
+	z-index: 100;
+}
+
+.table-game-number-flying-label {
+	width: 198px;
+	height: 148px;
+	background-image: url('../images/BalloonPop/PaperScrollSprites.png');
+	position: absolute;
+	z-index: 50;
+}
+
+.fallen-label {
+	background-color: white;
+}
+
+.balloon {
+	width: 185px;
+	height: 220px;
+	pointer-events: none;
+}
+
+#leftRangeLabel {
+	left: 60px;
+	top: 570px;
+	position: absolute;
+}
+
+#rightRangeLabel {
+	left: 725px;
+	top: 570px;
+	position: absolute;
+}
+
+#rightRangeLabel {
+
+}

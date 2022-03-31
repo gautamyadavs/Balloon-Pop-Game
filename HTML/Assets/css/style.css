@@ -1,0 +1,200 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+table {
+  width: 98%;
+}
+
+img, .cover-block {
+  user-drag: none; 
+  -webkit-user-drag: none;
+}
+
+.CTATDoneButton {
+  display: none;
+}
+
+.CTAT-svg {
+  background-color: transparent;
+}
+
+.CTATNumberLine--container {
+  border: 0px;
+}
+
+.CTATNumberLine {
+  z-index: 50;
+  height: 120px !important;
+  position: absolute;
+  left: 90px;
+  top: 600px;
+}
+
+.CTATNumberLine--tickmark-label {
+  font-size: 35px;
+  font-family: Arial;
+}
+
+.CTATButton {
+  display: none;
+}
+
+.CTATJumble {
+  width: 900px;
+  height: 200px;
+  visibility: hidden;
+  position: absolute;
+}
+
+.CTATJumble--item {
+  visibility: visible;
+  position: absolute;
+}
+
+.CTATSubmitButton button {
+  background-color: transparent;
+  display: none;
+  background-image: url('../images/common/SubmitButtonComponent.png');
+  width: 77px;
+  height: 54px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.CTATTextArea {
+  font-weight: 700;
+  font-family: Arial;
+  font-size: 24px;
+}
+
+.CTATRadioButton {
+  position: relative;
+}
+
+.graphics {
+  position: absolute;
+  z-index: 100;
+}
+
+.button-cell {
+  width: 3%;
+}
+
+.text-cell {
+  width: 48%;
+}
+
+.invert {
+  transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -khtml-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+}
+
+.table-game-number-label {
+  width: 100px;
+  height: 30px;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+  font-family: Arial;
+  font-size: 24px;
+  z-index: 100;
+  background-color: white;
+}
+
+.table-game-text-label {
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.reveal-on-start {
+  display: none;
+}
+
+#canvas {
+  width: 920px;
+  height: 720px;
+}
+
+#prompt {
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  z-index: 9999;
+}
+
+#instructionsText {
+  font-weight: 700;
+  font-size: 17px;
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  width: 820px;
+}
+
+#answerText {
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  width: 820px;
+}
+
+#buttonImage {
+  position: absolute;
+  left: 800px;
+  top: 205px;
+  display: none;
+}
+
+#initial-char, #ensemble-char, #scared-character {
+  position: absolute;
+  z-index: 9999;
+}
+
+#adviceSection {
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  width: 840px;
+}
+
+#adviceSection div {
+  display: inline;
+}
+
+#adviceSection table {
+  font-size: 14px;
+}
+
+#adviceQuestion, #adviceText {
+  font-size: 18px;
+}
+
+#jumble-block {
+  position: absolute;
+}
+
+#jumble-submit {
+  left: 780px;
+  position: absolute;
+  z-index: 9999;
+}
+
+#pulse {
+  width: 222px;
+  height: 222px;
+  position: absolute;
+  background-image: url('../images/Map/PulseSprites.png');
+}

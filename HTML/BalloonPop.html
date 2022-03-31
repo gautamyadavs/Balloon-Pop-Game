@@ -1,0 +1,101 @@
+<head>
+  <title>Balloon Pop</title>
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8">
+
+  <!-- Standard CTAT libraries -->
+  <link rel="stylesheet" href="Assets/css/CTAT.css"/>
+  <link rel="shortcut icon" href="">
+  <script src="Assets/js/common/jquery-1.9.0.min.js"></script>
+  <script src="Assets/js/common/ctat.min.js"></script>
+  <script src="Assets/js/common/ctatloader.js"></script>
+
+  <!-- Common CSS -->
+  <link rel="stylesheet" href="Assets/css/style.css">
+
+  <!-- Custom libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.1/svg.min.js"></script>
+    <script src="Assets/js/common/jquery.jsmovieclip-1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+
+  <script type="text/javascript">
+    // define screen width and height, used in other JS files
+    const WIDTH = 920;
+    const HEIGHT = 720;
+    const Y_OFFSET = 50;
+    const X_OFFSET = 40;
+
+
+  </script>
+
+  <!-- BRD file for hosting -->
+  <script>
+      var myVars = {
+        question_file: "../FinalBRDs/PSBalloonPop1",
+        tutoring_service_communication: "javascript"
+      };
+      function ctatOnload() {
+        initTutor(myVars);
+        // MathJax.Hub.Typeset();
+        // initTutor();
+        // $('#problem-statement-part-1').on('CTAT_EXECUTE_SAI', function (e) {
+        //     MathJax.Hub.Queue(['Typeset', MathJax.Hub, $('#problem-statement-part-1')[0]]);
+        // });
+      }
+    </script>
+
+  <link rel="stylesheet" href="Assets/css/BalloonPop.css">
+</head>
+<body data-width="920" data-height="720">
+  <div class="reveal-on-start" class="dart"></div>
+  <div id="jumble-block">
+    <div id="jumble" class="CTATJumble" data-ctat-tutor="false" data-ctat-enabled="false">
+      <div class="CTATTextField table-game-number-label" id="decimalText1"></div>
+      <div class="CTATTextField table-game-number-label" id="decimalText2"></div>
+      <div class="CTATTextField table-game-number-label" id="decimalText3"></div>
+      <div class="CTATTextField table-game-number-label" id="decimalText4"></div>
+    </div>
+    <div id="jumble-submit" class="CTATSubmitButton" data-ctat-target="jumble"></div>
+  </div>
+  <div class="CTATTextField table-game-text-label"
+  id="leftRangeLabel"></div>
+  <div class="CTATTextField table-game-text-label"
+  id="rightRangeLabel"></div>
+
+  <div id="canvas"></div>
+  <!-- The characters that pop up at the beginning and end of each game -->
+  <img id="initial-char">
+  <img id="ensemble-char">
+
+  <!-- The CTAT components -->
+  <div id="prompt">
+    <div id="instructionsText" class="CTATTextField"></div>
+    <div id="answerText" class="CTATTextField"></div>
+    <div id="startImageButton" class="CTATButton"></div>
+    <img id="buttonImage" src="Assets/images/common/StartButtonComponent.png">
+    <div id="adviceSection">
+      <div id="adviceQuestion" class="CTATTextField"></div>
+      <br/>
+      <div id="adviceText" class="CTATTextField"></div>
+      <br/>
+    </div>
+    <div id="adviceQDoneButton" class="CTATButton"></div>
+    <div id="done" class="CTATDoneButton"></div>
+  </div>
+
+  <!-- Custom JS code used for all games -->
+  <script type="text/javascript" src="Assets/js/common/GameSequence.js"></script>
+  <script type="text/javascript" src="Assets/js/common/CharacterAppearance.js"></script>
+
+  <script type="text/javascript" src="Assets/js/common/AbstractGame.js"></script>
+  <script type="text/javascript" src="Assets/js/common/GameUI.js"></script>
+  <script type="text/javascript" src="Assets/js/common/tpa.js"></script>
+  <script type="text/javascript" src="Assets/js/BalloonPop/Animation.js"></script>
+  <script type="text/javascript" src="Assets/js/common/TableGameUI.js"></script>
+  <script type="text/javascript" src="Assets/js/BalloonPop/BalloonPopUI.js"></script>
+  <script type="text/javascript" src="Assets/js/BalloonPop/BalloonPopGame.js"></script>
+  <script type="text/javascript" src="Assets/js/BalloonPop/main.js"></script>
+</body>
